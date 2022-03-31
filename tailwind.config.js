@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             colors: {
                 "pastel-blue": "#daeaf6",
+                "pastel-dark-blue": "#669db2",
             },
             fontFamily: {
                 kgcs: ["kgcs"],
