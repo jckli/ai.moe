@@ -14,9 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content={"A site to display the status of the hayasaka.moe project."}
         />
       </Head>
-      <SWRConfig>
-        <Component {...pageProps} />
-      </SWRConfig>
+      <Component {...pageProps} />
     </>
   );
 }
