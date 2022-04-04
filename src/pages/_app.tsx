@@ -10,9 +10,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>hayasaka.moe</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta
-          name="description"
-          content={"A site to display the status of the hayasaka.moe project."}
+          property="og:description"
+          content={"The hayasaka.moe project."}
         />
+        <meta
+          property="og:image"
+          content="/favicon.png"
+        />
+        <meta name="theme-color" content="#fcf4dd" />
       </Head>
       <Component {...pageProps} />
     </>
