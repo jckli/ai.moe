@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import logo from "/public/favicon.png";
-import { GitHubButton } from "../components/GitHubButton";
+import { CreatorButton } from "../components/CreatorButton";
 import { InstagramStatsComponent } from "../components/InstagramStats";
 
 const Home: NextPage = () => {
@@ -12,10 +12,18 @@ const Home: NextPage = () => {
                 <div className="py-20 flex items-center justify-center text-pastel-dark-blue text-3xl font-semibold">
                     <div className="w-[1000px] text-center lg:flex lg:items-center lg:justify-between">
                         <div className="">
-                            <div className="text-center">
-                                <Image draggable="false" src={logo} width="200px" height="200px" alt="Logo" />
+                            <div>
+                                <div className="text-center">
+                                    <Image draggable="false" src={logo} width="200px" height="200px" alt="Logo" />
+                                </div>
+                                <h1 className="font-kgcs">hayasaka.moe</h1>
                             </div>
-                            <h1 className="font-kgcs">hayasaka.moe</h1>
+                            <div>
+                                <h1 className="font-kgcs text-base mt-6">created by:</h1>
+                                <CreatorButton username="notjackli" />
+                                <CreatorButton username="nolilluzzi" />
+                                <CreatorButton username="anton.nwin" />
+                            </div>
                         </div>
                         <div>
                             <div
@@ -25,6 +33,9 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                
             </div>
         </>
     );
