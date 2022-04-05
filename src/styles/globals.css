@@ -6,6 +6,10 @@
   font-family: kgcs;
   src: url("/fonts/KGCorneroftheSky.ttf");
 }
+@font-face {
+    font-family: wildwords;
+    src: url("/fonts/wildwordsroman.ttf");
+}
 
 html,
 body {
