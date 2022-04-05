@@ -194,3 +194,23 @@ export interface User {
     created_at: string;
     updated_at: string;
 }
+
+export interface Posts {
+    data: Post[];
+    paging: {
+        cursors: {
+            before: string;
+            after: string;
+        }
+    }
+}
+
+export interface Post {
+    caption: string;
+    id: string;
+    media_type: string;
+    media_url: string;
+    permalink: string;
+    timestamp: string;
+    username: string;
+}
