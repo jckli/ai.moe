@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { SWRConfig } from "swr";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -11,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta
           property="og:description"
-          content={"The hayasaka.moe project."}
+          content={"Landing page to display the hayasaka.moe project."}
         />
         <meta
           property="og:image"
