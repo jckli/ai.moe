@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const InstagramPost = (props: any) => {
     return (
         <div className="mb-6">
