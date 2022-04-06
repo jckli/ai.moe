@@ -1,7 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next"
-import { ACCESS_TOKEN } from "../../../config"
 import { Posts } from "../../../util/types"
+
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN ?? "no_token";
 
 type Data = {
   data: any[];
