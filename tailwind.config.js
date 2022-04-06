@@ -10,10 +10,15 @@ module.exports = {
                 "pastel-mint-green": "#5e897e",
                 "pastel-green": "#addfac",
                 "pastel-dark-green": "#4c8d4c",
+                "pastel-pink": "#fce1e4",
+                "pastel-dark-pink": "#df9ea3",
             },
             fontFamily: {
                 kgcs: ["kgcs"],
                 wildwords: ["wildwords"],
+            },
+            screens: {
+                "smd": "700px",
             }
         },
     },
