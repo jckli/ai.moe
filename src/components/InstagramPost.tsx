@@ -17,6 +17,7 @@ export const InstagramPost = (props: any) => {
             <div className="mb-6">
                 <Carousel
                     defaultControlsConfig={{nextButtonClassName:"hidden", prevButtonClassName:"hidden"}}
+                    disableEdgeSwiping={true}
                 >
                     {props.child.data.map((c: any) => (
                         <img className="rounded-[20px]" draggable="false" src={c.media_url} key={c.id} alt={`Image ${c.id}`}/>
