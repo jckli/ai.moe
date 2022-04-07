@@ -12,7 +12,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const address = `https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,permalink,thumbnail_url,timestamp,username&access_token=${ACCESS_TOKEN}`;
+  const address = `https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,permalink,thumbnail_url,timestamp,username,children{media_url,thumbnail_url}&access_token=${ACCESS_TOKEN}`;
   const response = await fetch(address);
   const json: Posts = await response.json();
   res.status(200).json(json);

@@ -27,7 +27,7 @@ export const InstagramPosts = (props: any) => {
                 columnClassName="smd:pl-6"
             >
                 {info.data.map((post: Post) => (
-                    <InstagramPost link={post.media_url} key={post.id} />
+                    <InstagramPost link={post.media_url} key={post.id} child={post.children}/>
                 ))}
             </Masonry>
         </div>

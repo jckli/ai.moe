@@ -213,4 +213,12 @@ export interface Post {
     permalink: string;
     timestamp: string;
     username: string;
+    children?: {
+        data: PostChildren[];
+    };
+}
+
+export interface PostChildren {
+    media_url: string;
+    id: string;
 }
