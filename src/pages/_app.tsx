@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta
           property="og:description"
-          content={"Landing page to display the hayasaka.moe project."}
+          content={"hayasaka.moe?"}
         />
         <meta
           property="og:image"
