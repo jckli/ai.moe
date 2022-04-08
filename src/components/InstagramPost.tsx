@@ -14,7 +14,7 @@ export const InstagramPost = (props: any) => {
     if (!props.child) {
         return (
             <div className="mb-6">
-                <div className="relative" onTouchStart={toggle} onMouseEnter={toggle} onMouseLeave={toggle}>
+                <div className="relative" onTouchMove={toggle} onTouchStart={toggle} onMouseEnter={toggle} onMouseLeave={toggle}>
                     <img className="rounded-[20px]" draggable="false" src={props.link} alt={`Image ${props.key}`}/>
                     <div className="info" style={{opacity: show?"1":"0"}}>
                         <div className="n-post-fade absolute bottom-0 w-full pb-4 px-4 pt-6 rounded-br-[20px] rounded-bl-[20px]">
